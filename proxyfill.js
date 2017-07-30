@@ -4,7 +4,7 @@
  * Created by Roman Jámbor
  */
 
-if (!!window.Proxy) {
+if (!window.Proxy) {
 	console.log("[WARN] Your browser doesn't support Proxy which can be important for this application. Proxy fallback exists but it may impair performance.");
 
 	window.Proxy = (function () {
